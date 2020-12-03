@@ -1,6 +1,6 @@
 <?php
 $link = mysql_connect("localhost","root","")or die("<h2>No se encuentra el servidor</h2>");;
-$db = mysql_select_db("learning",$link)or die("<h2>Error de conexion</h2>");
+$db = mysql_select_db("registro",$link)or die("<h2>Error de conexion</h2>");
 
 $Email=$_POST[`EmialdelUsuario`];
 $password=$_POS[`PassworddelUsuario`];
@@ -18,6 +18,6 @@ mysql_query("INSERT INTO dato VALUES('','$Nombre','$Apellido','$Email','$contras
 echo '
 <h2>Registro Completo</h2>
 <h5>Gracias por el registro</h5>
-<a href="inde.html">Logearse</a>
+<a href="navbar.php">Logearse</a>
 ';
 ?>
